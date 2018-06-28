@@ -17,7 +17,7 @@ import javax.swing.JScrollPane;
 public class Interface {
 
 	private JFrame frmMassImageResizer;
-	public JTextArea logText = new JTextArea();
+	private JTextArea logText = new JTextArea();
 	private ResizeManager resizeManager = new ResizeManager();
 	private String[] resizeNames = resizeManager.nameList();
 
@@ -123,5 +123,10 @@ public class Interface {
 	
 	public void logWrite(String line) {
 		logText.append(line + "\n");
+	}
+
+	public float getParam1() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
